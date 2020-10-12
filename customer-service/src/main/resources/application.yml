@@ -1,0 +1,17 @@
+server:
+  port: 5002
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost/dvdrental
+    username: postgres
+    password:
+    driver-class-name: org.postgresql.Driver
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+          - mappings
+          - health
